@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-glow: 0 0 10px theme('colors.purple.500'),
+               0 0 20px theme('colors.purple.400'),
+               0 0 30px theme('colors.purple.300');
+}
+
+.dark .neon-text {
+  text-shadow: var(--neon-glow);
+}
+
+.dark .neon-border {
+  box-shadow: var(--neon-glow);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

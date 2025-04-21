@@ -20,8 +20,7 @@ export default function App() {
       <div className="dark:bg-gray-900 dark:text-white min-h-screen transition-colors duration-200">
         <header className="sticky top-0 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-4 flex justify-between items-center border-b dark:border-gray-700">
           <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Farewell 2025
-          </h2>
+            ECE 2027      </h2>
           <div className="flex items-center gap-4">
             <button
               onClick={toggleTheme}
